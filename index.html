@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cinema Ticket</title>
+  <link rel="shortcut icon" href="logo.png" type="image/x-icon">
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+<!-- Add the logo, app name, and rest of the content -->
+<header>
+    <img src="logo.jpg" alt="Movie Ticket Booking System Logo" class="logo">
+    <h1 class="app-name">MovieMaster</h1>
+    <div class="content">
+      <!-- Rest of the HTML code -->
+    </div>
+  </header>
+
+  <section class="container">
+    <div class="leftCont">
+      <div class="legendContainer">
+        <ul>
+          <li>
+            <span class="legend occupied"></span>
+            <span>Occupied</span>
+          </li>
+          <li>
+            <span class="legend selected"></span>
+            <span>Selected</span>
+          </li>
+        </ul>
+      </div>
+      <div class="mainSeatCont">
+        <div class="seatRowCont">
+          <div class="row">
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+          </div>
+          <div class="row">
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+          </div>
+          <div class="row">
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+          </div>
+        </div>
+        <div class="screen">Screen</div>
+      </div>
+    </div>
+    <div class="rightCont">
+      <div class="confirmCont">
+        <div class="movieInfo">
+          <select class="selectMovie">
+            <option value="">Select a movie</option>
+            <option value="Movie 1">Movie 1</option>
+            <option value="Movie 2">Movie 2</option>
+            <option value="Movie 3">Movie 3</option>
+          </select>
+          <p class="movieName"></p>
+          <p class="moviePrice"></p>
+          <p class="dateOn"></p>
+        </div>
+        <div class="numberOfSeatsCont">
+          <p class="numberOfSeat">0</p>
+          <p class="totalPrice">$0.00</p>
+        </div>
+        <div class="buttonCont">
+          <button class="bookButton">Book Seats</button>
+          <button class="resetButton">Reset</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Success Modal -->
+  <div class="overlay">
+    <div class="successModal">
+      <div class="modalTop">
+        <h2>Booking Successful!</h2>
+      </div>
+      <div class="modalCenter">
+        <p>Your seats have been booked successfully.</p>
+      </div>
+      <div class="modalBottom">
+        <button class="closeModal">Close</button>
+      </div>
+    </div>
+  </div>
+
+  
+    <!-- Error Modal -->
+    <div class="overlay errorOverlay">
+        <div class="errorModal">
+          <div class="modalTop">
+            <h2>Error!</h2>
+          </div>
+          <div class="modalCenter">
+            <p>Please select a movie and at least one seat.</p>
+          </div>
+          <div class="modalBottom">
+            <button class="closeErrorModal">Close</button>
+          </div>
+        </div>
+      </div>
+      <script src="index.js"></script>
+    </body>
+    </html>

@@ -1,0 +1,407 @@
+/* index.css */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+ 
+/* Style the logo */
+.logo {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin: 20px;
+    object-fit: cover;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* add a subtle shadow */
+    border: 2px solid #fff; /* add a white border */
+  }
+  
+  /* Style the app name */
+  .app-name {
+    font-size: 24px; /* adjust the font size to your liking */
+    font-weight: bold; /* make the font bold */
+    margin: 10px; /* add some margin around the app name */
+    display: inline-block; /* make the app name an inline block element */
+  }
+  
+  /* You can also add some additional styles to make the logo and app name look better */
+  header {
+    display: flex; /* make the header a flex container */
+    align-items: center; /* center the logo and app name vertically */
+    justify-content: space-between; /* add some space between the logo and app name */
+  }
+  header {
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    align-items: center;
+    gap: 20px;
+    background-color: #ddffff;
+  }
+  
+  .logo {
+    grid-column: 1;
+  }
+  
+  .app-name {
+    grid-column: 2;
+    text-align: center;
+  }
+  
+  .content {
+    grid-column: 3;
+  }
+
+/* body styling .... */
+
+  body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f9f9f9;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 40px auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  .leftCont {
+    flex-basis: 60%;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .legendContainer {
+    margin-bottom: 20px;
+  }
+/* ******************************* */
+
+/* Legend Container Styles */
+
+.legendContainer {
+    background-color: #f1f1f1;
+    display: flex;
+    padding: 1rem;
+    width: 100%;
+  }
+  
+  .legendContainer ul {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    list-style: none;
+    max-width: 600px;
+    margin: 0 auto;
+    user-select: none;
+  }
+  
+  .legendContainer ul li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .legendContainer ul li small {
+    color: #bdbdbd;
+    font-size: 12px;
+    letter-spacing: 1px;
+    margin-bottom: 4px;
+  }
+  
+  /* Seat Styles */
+  
+  .seat {
+    height: 25px;
+    width: 30px;
+    border: 1px solid #bdbdbd;
+    border-radius: 2px 2px 4px 4px;
+    margin: 10px;
+    margin-bottom: 0.8rem;
+    position: relative;
+    cursor: pointer;
+    background-color: #fff;
+    transition: 0.3s ease background-color;
+  }
+  
+  .seat::after {
+    content: "";
+    height: 23px;
+    width: 20px;
+    border: 1px solid #bdbdbd;
+    position: absolute;
+    left: 50%;
+    top: 29%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    border-radius: 2px 2px;
+    transition: 0.3s ease background-color;
+  }
+  
+  .seat:hover,
+  .seat:hover::after {
+    background-color: #e6e6e6;
+  }
+  
+  .legendContainer .seat {
+    cursor: default;
+    margin-bottom: 10px;
+  }
+  
+  .legendContainer .seat:hover,
+  .legendContainer .seat:hover::after {
+    background-color: #fff;
+  }
+  
+  .occupied {
+    background-color: lightgray;
+  }
+  
+  .selected {
+    background-color: rgb(168, 245, 168);
+    border-color: rgba(0, 190, 0, 0.336);
+  }
+
+  
+  .legendContainer ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .legendContainer li {
+    margin-right: 20px;
+  }
+  
+  .legend {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    margin-right: 10px;
+  }
+  
+  .occupied {
+    background-color: #ccc;
+  }
+  
+  .selected {
+    background-color: #66d9ef;
+  }
+  
+  .mainSeatCont {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .seatRowCont {
+    margin-bottom: 20px;
+  }
+  
+  .row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+  }
+  
+  .seat {
+    width: 30px;
+    height: 30px;
+    border: 1px solid #ddd;
+    border-radius: 50%;
+    margin: 5px;
+    cursor: pointer;
+  }
+ 
+  
+  .seat:hover {
+    background-color: #f0f0f0;
+  }
+  
+  .seat.selected {
+    background-color: #66d9ef;
+  }
+  
+  .screen {
+    width: 100%;
+    
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .rightCont {
+    flex-basis: 30%;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .confirmCont {
+    padding: 20px;
+  }
+  
+  .movieInfo {
+    margin-bottom: 20px;
+  }
+  
+  .selectMovie {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+  }
+  
+  .movieName {
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .moviePrice {
+    font-size: 18px;
+    color: #666;
+    margin-bottom: 10px;
+  }
+  
+  .dateOn {
+    font-size: 16px;
+    color: #999;
+  }
+  
+  .numberOfSeatsCont {
+    margin-bottom: 20px;
+  }
+  
+  .numberOfSeat {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .totalPrice {
+    font-size: 18px;
+    color: #666;
+  }
+  
+  .buttonCont {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .bookButton {
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+  
+  .bookButton:hover {
+    background-color: #3e8e41;
+  }
+  
+  .resetButton {
+    background-color: #ccc;
+    color: #333;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+  
+  .resetButton:hover {
+    background-color: #bbb;
+  }
+  
+ .overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+
+.successModal {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 300px;
+  margin: 40px auto;
+}
+
+.errorModal {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 300px;
+  margin: 40px auto;
+}
+
+.modalTop {
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.modalCenter {
+  padding: 20px;
+}
+
+.modalBottom {
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  text-align: center;
+}
+
+.closeModal {
+  background-color: #4CAF50;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.closeModal:hover {
+  background-color: #3e8e41;
+}
+
+.closeErrorModal {
+  background-color: #4CAF50;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.closeErrorModal:hover {
+  background-color: #3e8e41;
+}
