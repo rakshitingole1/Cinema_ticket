@@ -26,6 +26,7 @@ Movie Ticket Booking System is a web application that allows users to book movie
 
 ## Getting Started
 -------------------
+![Screenshot 2024-07-04 115014](https://github.com/rakshitingole1/Cinema_ticket/assets/142722562/422d5ce7-e2e4-4f5a-a216-e8ecfa567629)
 
 
 ## License
